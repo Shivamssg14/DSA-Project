@@ -12,9 +12,9 @@
 
 using namespace std;
 
-// ============================================================
+
 // SONG
-// ============================================================
+
 class Song {
 public:
     string title;
@@ -34,9 +34,9 @@ public:
     }
 };
 
-// ============================================================
+
 // HELPER FUNCTIONS
-// ============================================================
+
 string toLowerCase(string text) {
     for (char& ch : text) {
         ch = static_cast<char>(tolower(static_cast<unsigned char>(ch)));
@@ -82,9 +82,9 @@ string getSaveFilePath() {
     return getExecutableFolder() + "\\playlist.txt";
 }
 
-// ============================================================
+
 // DOUBLY LINKED LIST NODE
-// ============================================================
+
 class Node {
 public:
     Song data;
@@ -98,9 +98,9 @@ public:
     }
 };
 
-// ============================================================
+
 // DOUBLY LINKED LIST - PLAYLIST
-// ============================================================
+
 class Playlist {
 private:
     Node* head;
@@ -305,10 +305,10 @@ public:
     }
 };
 
-// ============================================================
+
 // QUEUE - FIFO
 // Implemented using a singly linked queue
-// ============================================================
+
 class QueueNode {
 public:
     Song data;
